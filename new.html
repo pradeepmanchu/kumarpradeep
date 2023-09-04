@@ -1,0 +1,68 @@
+<html>
+<head>
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="main">
+    <center>
+    <h1>Fill the details</h1>
+    <h4>Gender</h4>
+    <input id="male" type="radio" name="one">
+    <label for="male" name="one" >male</label>
+    <input id="Female" type="radio" name="one">
+    <label for="Female" >Female</label> 
+    <div>
+        <label>Mobile Number</label>
+        <input type="text" placeholder="Enter 10 digit number" ><br>
+        <label>Enter Verfication Code</label>
+        <input type="text" placeholder="4 digit code"><br>
+        <label>Community</label>
+         <select>
+            <option>OC</option>
+             <option>Bc</option>
+             <option>SC</option>
+             <option>ST</option>
+        </select><br>
+        
+        <label> Date of Birth:</label>
+        <input type="date"><br>
+        <label> Job:</label>
+        <input placeholder="enter"><br>
+        <label> Educational Qulification:</label>
+        <input placeholder="enter">
+        
+    
+       
+    </div>
+    <button id="btn1">Submit</button>
+</center>
+</div>
+</body>
+</html>
+<style>
+    input{
+        color: black;
+    } 
+    .main{
+        background-image: url("desktop-wallpaper-red-heart-heart-red-love-heart-thumbnail%20(1).jpg");
+        font-family: cursive; 
+        font-display: fallback;
+    }
+    *{
+        color: aliceblue;
+    }
+    button{
+        background-color: orange;
+        color: black;
+    }
+</style>
+<script>
+    var button1=document.getElementById("btn1");
+    button1.addEventListener("click",function(){
+        window.location="index.html"
+    })
+    
+</script>
